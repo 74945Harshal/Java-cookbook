@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Input_and_digit_check_occurance 
+{
+
+	public static void main(String[] args) 
+	{
+		int rem,count=0;
+		System.out.println("Enter a number: ");
+		int num=new Scanner(System.in).nextInt();
+		System.out.println("Enter a digit: ");
+		int digit=new Scanner(System.in).nextInt();
+		while(num!=0)
+		{
+			rem=num%10;
+			if(rem%digit==0)
+				count++;
+			num=num/10;
+		}
+		System.out.println(digit +" is occured "+count+" times.");
+	}
+
+}
