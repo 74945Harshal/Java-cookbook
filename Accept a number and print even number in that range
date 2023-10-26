@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Input_range_print_Even_num 
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter a starting num: ");
+		int start= new Scanner(System.in).nextInt();
+		System.out.println("Enter a Ending num: ");
+		int end= new Scanner(System.in).nextInt();
+		for(int i=start+1;i<end;i++)
+		{
+            if(i%2==0)
+			System.out.println(i);
+		}
+
+	}
+
+}
